@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Anneler Günü</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* İlk ekran */
+#firstPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+/* Buton */
+button {
+    padding: 20px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* İkinci ekran */
+#secondPage {
+    display: none;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center/cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Yazı */
+h1 {
+    color: white;
+    font-size: 60px;
+    background: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="firstPage">
+    <button onclick="showPage()">Butona Bas</button>
+</div>
+
+<div id="secondPage">
+    <h1>Anneler Günün Kutlu Olsun ❤️</h1>
+</div>
+
+<script>
+function showPage() {
+    document.getElementById("firstPage").style.display = "none";
+    document.getElementById("secondPage").style.display = "flex";
+}
+</script>
+
+</body>
+</html>
